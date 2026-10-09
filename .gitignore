@@ -1,0 +1,27 @@
+# Installed dependencies
+node_modules/
+
+# Build output and generated frontend assets
+dist/
+client/dist/
+
+# Environment files and local secrets. Keep only the verified-safe client template.
+.env
+.env.*
+!client/.env.example
+server/.env.example
+
+# Logs, test coverage, and local caches
+*.log
+coverage/
+.cache/
+.vite/
+
+# OS and local editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Large generated road-network data; keep the source/build process documented instead.
+server/algorithm/mumbai_roads.json
